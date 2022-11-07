@@ -32,9 +32,9 @@ const Reportz = ({ report }: Props) => {
     <main className=' max-w-2xl   '>
       <div className='mt-[0px] absolute '>
     <header className="mx-auto flex fixed max-w-7xl justify-between p-5 bg-[#FFF4E0]">
-      <div className="  "> 
+      <div className="absolute w-[255px] h-[91px] left-[91px] top-[93px]  "> 
       <Link key={report._id} href={`/linkreport/${report.slug.current}`} >
-          <img src='/icmr_logo.png' className='w-[205px] h-[91px] left-[91px] top-[93px]' />
+          <img src='/icmr_logo.png' className='h-[90px] w-[200px]' />
         </Link>
       </div>
       <h1 className='text-[#119AC5] absolute text-3xl font-bold w-[326px] h-[35px] left-[504px] top-[117px]  font-Roboto '>Covid-19 Test Report 
@@ -147,10 +147,13 @@ const Reportz = ({ report }: Props) => {
   
   <div className=" "> {/*akkha div*/}
    
-    <div className="absolute w-[44px] h-[13px] left-[636px] top-[718px]  ">{/*full name div*/}
+    <div className="absolute w-[67px] h-[13px] left-[636px] top-[718px]  ">{/*full name div*/}
       <label className="font-Roboto font-light md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
         SRF ID:
       </label>
+    </div>
+    <div className=""> {/*input dabba*/}
+      <input className=" w-[331px]  h-[44px] left-[817px] top-[703px] absolute rounded   py-2 px-8  leading-tight " id="inline-full-name" type="text" value={report.srfid}/>
     </div>
     
     
@@ -165,8 +168,8 @@ const Reportz = ({ report }: Props) => {
     <div className=""> {/*input dabba*/}
       <input className=" w-[331px]  h-[44px] left-[274px] top-[756px] absolute rounded   py-2 px-8  leading-tight " id="inline-full-name" type="text" value={report.resultofsars}/>
     </div>
-    <div className="w-[63px]  h-[16px] left-[636px] top-[770px] absolute  ">{/*full name div*/}
-      <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
+    <div className="w-[90px]  h-[16px] left-[636px] top-[770px] absolute  ">{/*full name div*/}
+      <label className="font-Roboto font-light md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
         Test Type:
       </label>
     </div>
@@ -184,8 +187,8 @@ const Reportz = ({ report }: Props) => {
     <div className=" "> {/*input dabba*/}
       <input className=" absolute w-[331px] h-[44px] left-[274px] top-[809px] rounded py-2 px-8 leading-tight" type="text"  value={report.specimentype}/>
     </div>
-    <div className="w-[61px]  h-[15px] left-[636px] top-[823px] absolute ">{/*full name div*/}
-      <label className=" text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
+    <div className="w-[87px]  h-[15px] left-[636px] top-[823px] absolute ">{/*full name div*/}
+      <label className=" font-Roboto font-light md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
       Report ID:
 
       </label>
@@ -196,17 +199,17 @@ const Reportz = ({ report }: Props) => {
   </div>
   
   <div className="  "> {/*akkha div*/}
-    <div className="absolute w-[127px] h-[28px] left-[93px] top-[873px] ">{/*patient div*/}
+    <div className="absolute w-[149px] h-[28px] left-[93px] top-[873px] ">{/*patient div*/}
       <h1 className="   font-Roboto font-light ">
       Date Time of Sample<br></br>
 Collection:
       </h1>
     </div>
     <div className=" "> {/*input dabba*/}
-      <input className=" absolute w-[331px] h-[44px] left-[274px] top-[858px] rounded py-2 px-8 leading-tight" type="text" value={report.datetimeofcollection}/>
+      <input className=" absolute w-[331px] h-[44px] left-[274px] top-[858px] rounded py-2 px-8 leading-tight" type='text' value={report.datetimeofcollection}/>
     </div>
-    <div className="w-[128px]  h-[28px] left-[636px] top-[873px] absolute ">{/*full name div*/}
-      <label className=" font-Roboto font-light  md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
+    <div className="w-[165px]  h-[28px] left-[636px] top-[873px] absolute ">{/*full name div*/}
+      <label className=" font-Roboto  text-start font-light md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
       Date Time of Sample<br></br>
 Received at Lab:
       </label>
@@ -217,7 +220,7 @@ Received at Lab:
   </div>
   
   <div className="  "> {/*akkha div*/}
-    <div className="absolute w-[127px] h-[30px] left-[93px] top-[939px] ">{/*patient div*/}
+    <div className="absolute w-[149px] h-[30px] left-[93px] top-[939px] ">{/*patient div*/}
       <h1 className="   font-Roboto font-light ">
       Date Time of Sample<br></br>
 Testing:
@@ -227,8 +230,8 @@ Testing:
     <div className="  "> {/*input dabba*/}
       <input className=" absolute w-[331px] h-[44px] left-[274px] top-[925px] rounded py-2 px-8 leading-tight" type="text" value={report.datetimeofsampletesting}/>
     </div>
-    <div className="w-[120px]  h-[30px] left-[636px] top-[939px] absolute ">{/*full name div*/}
-      <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
+    <div className="w-[156px]  h-[30px] left-[636px] top-[939px] absolute ">{/*full name div*/}
+      <label className=" font-Roboto  text-start font-light md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
       Date Time of Result<br></br>
 Reported:
 
@@ -239,7 +242,7 @@ Reported:
     </div>
   </div>
   <div className="    "> {/*akkha div*/}
-    <div className="absolute w-[53px] h-[13px]  left-[93px] top-[718px]">{/*patient div*/}
+    <div className="absolute w-[58px] h-[13px]  left-[93px] top-[718px]">{/*patient div*/}
       <h1 className="  font-Roboto font-light ">
         ICMR ID
       </h1>
