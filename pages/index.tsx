@@ -21,12 +21,12 @@ export default function Home({reports}: Props){
       </Head>
     </div>
     <div>
-    <Header/>
+   
 
     {/*Reports */}
     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6'>
       {reports.map(report =>(
-        <Link key={report._id} href={`/validate_report/${report.slug.current}`}>
+        <Link key={report._id} href={`/report/${report.slug.current}`}>
           <div className='border rounded-lg group overflow-hidden cursor-pointer'>
             <h1>Report</h1>
             <div className='flex justify-between p-5 bg-white'>
