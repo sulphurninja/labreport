@@ -74,38 +74,22 @@ export default {
     {
       name: 'datetimeofcollection',
       title: 'Date Time of Sample Collection',
-      type: 'datetime',
-      options: {
-        dateFormat: 'DD-MM-YYYY',
-        timeFormat: 'HH:mm:ss',
-      }
+      type: 'string',
     },
     {
       name: 'datetimeofreceived',
       title: 'Date Time of Sample Received',
-      type: 'datetime',
-      options: {
-        dateFormat: 'DD-MM-YYYY',
-        timeFormat: 'HH:mm:ss',
-      }
+      type: 'string'
     },
     {
       name: 'datetimeofsampletesting',
       title: 'Date Time of Sample Testing',
-      type: 'datetime',
-      options: {
-        dateFormat: 'DD-MM-YYYY',
-        timeFormat: 'HH:mm:ss',
-      }
+      type: 'string'
     },
     {
       name: 'datetimeofresultreported',
       title: 'Date Time of Result Reported',
-      type: 'datetime',
-      options: {
-        dateFormat: 'DD-MM-YYYY',
-        timeFormat: 'HH:mm:ss',
-      }
+      type: 'string'
     },
     {
       name: 'slug',
